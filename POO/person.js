@@ -27,6 +27,7 @@ class Person{
         console.log("Los hobbies son: " + hobbies);
     }
     }
-
+    
     module.exports.Person = Person
+
 

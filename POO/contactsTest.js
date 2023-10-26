@@ -5,5 +5,5 @@ let person2 = new myLib.Person("Javier", "Palancar", "España")
 let personas = new myLib.Contacts()
 personas.anadirPerson(person1)
 personas.anadirPerson(person2)
-// console.log(personas);
+console.log(personas.persons);
 personas.printPersons()

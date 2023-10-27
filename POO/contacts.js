@@ -30,6 +30,6 @@ printPersons(){
 }
 }
 
-module.exports.Contacts = Contacts 
-module.exports.Person = Person
-
+// module.exports.Contacts = Contacts 
+// module.exports.Person = Person
+module.exports = {Contacts}

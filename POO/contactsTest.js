@@ -1,3 +1,4 @@
+// let myLib = require("./contacts.js")
 let myLib = require("./contacts.js")
 
 let person1 = new myLib.Person("Belén", "Castelli", "Argentina")

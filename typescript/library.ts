@@ -30,12 +30,16 @@ public setManager(newManager):void {
 
 public toString():string {
     let string:string = ""
-    
-    for(let propiedad in this.books){
-   {
-        string += ` ${propiedad} - ${this.books[propiedad]};`
-    }}
+    for(let i = 0; i<this.books.length; i++){
+        string += this.books[i].toString()
+    }
     return string
+    
+//     for(let propiedad in this.books){
+//    {
+//         string += ` ${propiedad} - ${this.books[propiedad]};`
+//     }}
+//     return string
 }
 
 getNumberofBooks():number {

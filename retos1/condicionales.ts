@@ -71,3 +71,5 @@ function isEven(number:number):string {
 console.log(isEven(12));
 console.log(isEven(9));
 
+export {isEven}
+

@@ -35,7 +35,7 @@ console.log(myRevert(nombres));
 
 function isRainbow(colors: string []):boolean [] {
 let inRainbow:boolean[] = []
-for(let i = 0; i < colors.length -1; i++){
+for(let i = 0; i < colors.length; i++){
     if(colors[i] == "rojo" || colors[i] == "naranja"  || colors[i] == "amarillo"  || colors[i] == "verde" || colors[i] == "azul"  || colors[i] == "violeta") {
      inRainbow.push(true)} 
     else {inRainbow.push(false)}
@@ -59,3 +59,5 @@ function add(myWords: string []):number {
 
 let words:string[] = ["Hola", "que tal", "mundo"]
 console.log(add(words));
+
+export {add}

@@ -13,3 +13,5 @@ console.log(myPoint.toString());
 
 console.log(myPoint.distanceToOrigin());
 console.log(myPoint.calculateDistance(myPoint2));
+console.log(myPoint.calcularQuadrant());
+

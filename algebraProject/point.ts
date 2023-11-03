@@ -1,7 +1,7 @@
 class Point {
     private x:number
     private y:number
-
+    
     constructor(x:number, y:number){
         this.x=x
         this.y=y
@@ -54,10 +54,29 @@ class Point {
         // } else if(this.x > 0 && this.y < 0) {
         //     return cuadrante = 4
         // }
-        return cuadrante
+        return cuadrante    
+    }
+
+    public calculateNearest(points: Point []): Point {
     
-}
-}
+    let pointNearet: Point = points[0]
+    let distanceNearest: number = pointNearet.calculateDistance(points[0])
+    
+    for (let i = 1; i < points.length; i++){
+        let distance:number = pointNearet.calculateDistance(points[i])
+        if (distance < distanceNearest){
+            pointNearet = points[i]
+        }
+    }
+    return pointNearet
+    } 
+
+
+    
+} 
+    
+
+
 
 export {Point}
 
